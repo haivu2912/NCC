@@ -6,13 +6,12 @@
 
 .container {
     display: flex;
-    width: 1918px;
-    height: 935px;
 }
 
 .sidebar {
     width: 150px;
-    height: 935px;
+    min-height: 935px;
+    height: 100vh;
     background-color: #191718; 
 }
 
@@ -24,9 +23,12 @@ li {
     background-color: #191718;
     cursor: pointer;
 }
+
 a {
     position: absolute;
-    color: #ccc;
+    font-size: 16px;
+    font-weight: 700;
+    color: #AAAAAA;
     top: 14px;
     left: 16px;
 }
@@ -38,41 +40,38 @@ li:hover {
 li:hover a {
     color: #fff;
 }
+
 .content {
-    display: flex;
-    flex-direction: column;
-    width: 1768px;
-    height: 935px;
-    justify-content: center;
-    position: relative;
+   position: relative;
 }
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 729px;
     width: 310px;
     height: 122px;
+    margin: 20px 729px 30px 729px;
 }
 
 .text {
-    position: relative;
-    margin: 0 129px;
     width: 1510px;
-    height: 201px;
+    min-height: 201px;
     background-color: #EFEFEF;
+    margin-left: 129px;
+}
+
+.text h2 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 38px;
     text-align: center;
 }
 
-h2 {
-    margin-bottom: 18px;
+.text p {
+    padding: 15px 269px 38px;
 }
 
 .group {
     display: flex;
-    padding: 30px 129px;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    margin: 40px 129px 0;
 }
 
 
@@ -81,11 +80,44 @@ h2 {
     height: 252px;
 }
 
-.group-content {
-    display: flex;
+.group-item h2 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
+.group-item:nth-child(1) {
+    margin-right: 50px;
+} 
+.group-item:nth-child(2) {
+    margin-right: 50px;
+} 
+
+.group-content {
+    margin-top: 18px;
+}
+
+.group-content p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.group-content img {
+    float: left;
+    width: 128px;
+    height: 128px;
+    margin-right: 16px;
+}
+
+
 .footer {
-    margin-top: 30px;
-   margin-left: 129px;
+    height: 79px;
+    margin-top: 128px;
+    border-top: 1px solid #DEDEDE;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-left: 129px;
 }
